@@ -17,14 +17,16 @@ const titleStyle = css({
   marginBottom: '50px'
 });
 
+const defaultState = {
+  grid: cloneDeep(GRID),
+  currentValue: 'X',
+  emptyFields: ROWS_SIZE * COLUMNS_SIZE,
+  isGameOver: false,
+  winner: ''
+};
+
 class App extends Component {
-  state = {
-    grid: cloneDeep(GRID),
-    currentValue: 'X',
-    emptyFields: ROWS_SIZE * COLUMNS_SIZE,
-    isGameOver: false,
-    winner: ''
-  }
+  state = defaultState;
 
   checkGameStatus = ({ grid }) => {
     if(grid[0][0] === grid[0][1] && grid[0][0] === grid[0][2] && grid[0][0] !== ''){
@@ -61,14 +63,28 @@ class App extends Component {
     const { isGameOver, winner, emptyFields } = this.state;
     if(isGameOver && winner !== ''){
       return (
-        <h4>{winner} IS A WINNER</h4>
+        <div>
+          <h4>{winner} IS A WINNER</h4>
+          <button
+            className="btn btn-outline-dark btn-sm"
+            onClick={() => this.restartGame()}>RESTART</button>
+        </div>
       );
     }
     else if(emptyFields === 0){
       return (
-        <h4>IT'S A DRAW</h4>
+        <div>
+          <h4>IT'S A DRAW</h4>
+          <button
+            className="btn btn-outline-dark btn-sm"
+            onClick={() => this.restartGame()}>RESTART</button>
+        </div>
       );
     }
+  }
+
+  restartGame = () => {
+    this.setState(defaultState);
   }
 
   handleClick = ({row, column}) => {
