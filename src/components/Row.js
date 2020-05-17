@@ -10,18 +10,24 @@ const rowStyle = css({
 const Row = ({
   columns,
   isTopRow,
-  isBottomRow
+  isBottomRow,
+  rowIndex,
+  onClick
 }) => (
   <div
     className={rowStyle}
   >
-    {columns.map((fields, index) => (
+    {columns.map((field, index) => (
       <Field
         key={index}
         isTopRow={isTopRow}
         isBottomRow={isBottomRow}
         isLeftColumn={index === 0}
         isRightColumn={index === columns.length - 1}
+        rowIndex={rowIndex}
+        columnIndex={index}
+        onClick={onClick}
+        value={field}
       />
     ))}
   </div>

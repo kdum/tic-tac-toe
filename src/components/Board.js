@@ -2,7 +2,8 @@ import React from 'react';
 import Row from '../components/Row';
 
 const Board = ({
-  grid
+  grid,
+  onClick
 }) => {
   return (
     <div>
@@ -12,6 +13,8 @@ const Board = ({
           columns={rows}
           isTopRow={index === 0}
           isBottomRow={index === grid.length - 1}
+          rowIndex={index}
+          onClick={onClick}
         />
       ))}
     </div>

@@ -11,11 +11,30 @@ const GRID = ROW_ARR.map(x => COL_ARR.slice());
 
 const appStyle = css({
   textAlign: 'center',
+  backgroundColor: '#000000'
+});
+
+const titleStyle = css({
+  marginBottom: '50px'
 });
 
 class App extends Component {
   state = {
-    grid: cloneDeep(GRID)
+    grid: cloneDeep(GRID),
+    currentValue: 'X'
+  }
+
+  handleClick = ({row, column}) => {
+    const { grid, currentValue } = this.state;
+
+    const clonedGrid = cloneDeep(grid); 
+    const nextValue = currentValue === 'X' ? 'O' : 'X';
+    clonedGrid[row][column] = currentValue;
+
+    this.setState({
+      currentValue: nextValue,
+      grid: clonedGrid
+    });
   }
 
   render() {
@@ -23,9 +42,10 @@ class App extends Component {
 
     return (
       <div className={appStyle}>
-        <h1>Tic-Tac-Toe</h1>
+        <h1 className={titleStyle}>Tic-Tac-Toe</h1>
         <Board
-          grid={grid} 
+          grid={grid}
+          onClick={this.handleClick}
         />
       </div>
     );
