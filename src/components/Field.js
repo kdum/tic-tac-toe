@@ -32,7 +32,7 @@ const Field = ({
       <div
         className={fieldStyle}
         onClick={() => {
-          if(!value){
+          if(!value && onClick){
             onClick({row: rowIndex, column: columnIndex})
           }
         }}
