@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/tic-tac-toe/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/tic-tac-toe/static/js/main.cd9a9fa9.chunk.js",
-    "main.js.map": "/tic-tac-toe/static/js/main.cd9a9fa9.chunk.js.map",
+    "main.js": "/tic-tac-toe/static/js/main.db308475.chunk.js",
+    "main.js.map": "/tic-tac-toe/static/js/main.db308475.chunk.js.map",
     "runtime-main.js": "/tic-tac-toe/static/js/runtime-main.29e8e2be.js",
     "runtime-main.js.map": "/tic-tac-toe/static/js/runtime-main.29e8e2be.js.map",
-    "static/js/2.2ab807b0.chunk.js": "/tic-tac-toe/static/js/2.2ab807b0.chunk.js",
-    "static/js/2.2ab807b0.chunk.js.map": "/tic-tac-toe/static/js/2.2ab807b0.chunk.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/tic-tac-toe/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c52bb3fb.chunk.js": "/tic-tac-toe/static/js/2.c52bb3fb.chunk.js",
+    "static/js/2.c52bb3fb.chunk.js.map": "/tic-tac-toe/static/js/2.c52bb3fb.chunk.js.map",
     "index.html": "/tic-tac-toe/index.html",
-    "precache-manifest.1784d2bb7fa085d738e75be24e5524f6.js": "/tic-tac-toe/precache-manifest.1784d2bb7fa085d738e75be24e5524f6.js",
+    "precache-manifest.1501abbf52bd45311eb7170676bc6919.js": "/tic-tac-toe/precache-manifest.1501abbf52bd45311eb7170676bc6919.js",
     "service-worker.js": "/tic-tac-toe/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/tic-tac-toe/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/tic-tac-toe/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.2ab807b0.chunk.js.LICENSE.txt": "/tic-tac-toe/static/js/2.2ab807b0.chunk.js.LICENSE.txt"
+    "static/js/2.c52bb3fb.chunk.js.LICENSE.txt": "/tic-tac-toe/static/js/2.c52bb3fb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.29e8e2be.js",
-    "static/js/2.2ab807b0.chunk.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c52bb3fb.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.cd9a9fa9.chunk.js"
+    "static/js/main.db308475.chunk.js"
   ]
 }
